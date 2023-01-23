@@ -1,0 +1,35 @@
+nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    
+    #menu-icon {
+    display: none;
+    cursor: pointer;
+    }
+    
+    ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+        li {
+            display: inline-block;
+        }
+    
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 15px;
+            display: block;
+      
+            &:hover {
+            background-color: #444;
+            }
+        }
+    }
+}

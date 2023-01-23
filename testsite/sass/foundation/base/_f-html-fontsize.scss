@@ -1,0 +1,17 @@
+html{
+    font-size: 10px;
+    @media (min-width: 768px) {
+        // viewport 768px のとき font-size 16px
+    font-size: calc(100vw * 6 / 768);
+    }
+
+    @media (min-width: 1240px) {
+    // viewport 1240px のとき font-size 18px
+    font-size: calc(100vw * 8 / 1240);
+    }
+
+    @media (min-width: 1440px) {
+    // viewport 1440px のとき font-size 20px
+    font-size: calc(100vw * 10 / 1440);
+    }
+}
