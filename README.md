@@ -1,5 +1,1 @@
-<<<<<<< local
-# local
-=======
 # main
->>>>>>> main
