@@ -1,0 +1,60 @@
+//フォント管理
+
+@mixin font-( //使用するfont名に変えよう
+    $fontsize:0rem,
+    $letterSpacing:0px,
+    $lineHeight:0rem,
+    ){
+    font-family: a ; //使用するfont-familyに変更
+    font-weight: 100; //使用するfont-weght指定
+    letter-spacing: $letterSpacing;
+    line-height: $lineHeight;
+    font-size: $fontsize;
+}
+
+@mixin font-(
+    $fontsize:0rem,
+    $letterSpacing:0px,
+    $lineHeight:0rem,
+    ){
+    font-family: a ;
+    font-weight: 100;
+    letter-spacing: $letterSpacing;
+    line-height: $lineHeight;
+    font-size: $fontsize;
+}
+
+@mixin font-(
+    $fontsize:0rem,
+    $letterSpacing:0px,
+    $lineHeight:0rem,
+    ){
+    font-family: a ;
+    font-weight: 100;
+    letter-spacing: $letterSpacing;
+    line-height: $lineHeight;
+    font-size: $fontsize;
+}
+@mixin font-(
+    $fontsize:0rem,
+    $letterSpacing:0px,
+    $lineHeight:0rem,
+    ){
+    font-family: a ;
+    font-weight: 100;
+    letter-spacing: $letterSpacing;
+    line-height: $lineHeight;
+    font-size: $fontsize;
+}
+
+@mixin font-(
+    $fontsize:0rem,
+    $letterSpacing:0px,
+    $lineHeight:0rem,
+    ){
+    font-family: a ;
+    font-weight: 100;
+    letter-spacing: $letterSpacing;
+    line-height: $lineHeight;
+    font-size: $fontsize;
+}

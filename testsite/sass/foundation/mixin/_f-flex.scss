@@ -1,0 +1,12 @@
+//flex使用時に使う、自由利かすためにwidth,heightは抜いてる。
+//別で指定しよう
+
+@mixin flexbox(
+    $gap: 5rem,
+    $justify-content:center,)
+    {
+    display: flex;
+    gap: $gap;
+    justify-content: $justify-content;
+    align-items: center;
+}
