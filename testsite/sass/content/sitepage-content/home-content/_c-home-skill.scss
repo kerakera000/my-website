@@ -1,0 +1,55 @@
+@use '../../../foundation/class-mixin/f-title-content' as title;
+@use '../../../foundation/mixin/f-flex' as flex;
+@use '../../../foundation/mixin/f-inner' as inner;
+@use '../../../foundation/base/f-font-family' as font;
+@use '../../../foundation/class-mixin/f-card-content' as card;
+
+.skill-set{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    flex-direction: column;
+    @include flex.flex($gap:10rem);
+    @include title.title-content($margin-bottom:0);
+    @include inner.inner($padding-left:8rem,$padding-right:8rem);
+    overflow: hidden;
+    &__content{
+        width: 100%;
+        height: 68rem;
+        padding: 17rem 5rem 6rem;
+        text-align: center;
+        border-radius: 1.5rem;
+        position: relative;
+        @include flex.flex($gap:11rem);
+        &--title{
+            width: 40rem;
+            height: 5rem;
+            border-radius: 1rem;
+            position: absolute;
+            left: 50%;
+            top: 13%;
+            transform: translate(-50% ,-50%);
+            @include font.font-notojp-bold($fontsize:3rem);
+        }
+        @include card.card-content;
+    }
+    &__WPcontent{
+        width: 100%;
+        height: 68rem;
+        padding: 17rem 5rem 6rem;
+        text-align: center;
+        border-radius: 1.5rem;
+        position: relative;
+        @include flex.flex($gap:8rem);
+        &--title{
+            width: 40rem;
+            height: 5rem;
+            border-radius: 1rem;
+            position: absolute;
+            left: 50%;
+            top: 13%;
+            transform: translate(-50% ,-50%);
+            @include font.font-notojp-bold($fontsize:3rem);
+        }
+        @include card.card-content($border-radius:50%);
+    }
+}

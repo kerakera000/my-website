@@ -1,34 +1,27 @@
-nav {
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    
-    #menu-icon {
-    display: none;
-    cursor: pointer;
-    }
-    
-    ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-        li {
-            display: inline-block;
-        }
-    
-        a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.2em;
-            padding: 15px;
-            display: block;
-      
-            &:hover {
-            background-color: #444;
+@use '../../foundation/base/f-font-family' as font;
+@use '../../foundation/mixin/f-flex' as flex;
+@use '../../foundation/mixin/f-inner' as inner;
+
+.header{
+    width: 100%;
+    height: 7rem;
+    position: fixed;
+    z-index: 999;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    &__nav{
+        @include inner.inner($padding-left:9rem,$padding-right:9rem);
+        width: 100%;
+        height: 6rem;
+        &--list-box{
+            @include flex.flex;
+            height: inherit;
+            width: 100%;
+            margin:0 auto ;
+            border-radius: 2rem;
+            &--item{
+                @include font.font-roboto-bold($fontsize:1.8rem,$letterSpacing:1.4px,$lineHeight:3.7rem);
             }
         }
     }

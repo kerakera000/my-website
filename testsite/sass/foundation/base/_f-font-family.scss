@@ -1,59 +1,59 @@
 //フォント管理
 
-@mixin font-( //使用するfont名に変えよう
-    $fontsize:0rem,
-    $letterSpacing:0px,
-    $lineHeight:0rem,
+@mixin font-roboto-bold(
+    $fontsize:8.9rem,
+    $letterSpacing:7px,
+    $lineHeight:18rem,
     ){
-    font-family: a ; //使用するfont-familyに変更
-    font-weight: 100; //使用するfont-weght指定
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     letter-spacing: $letterSpacing;
     line-height: $lineHeight;
     font-size: $fontsize;
 }
 
-@mixin font-(
-    $fontsize:0rem,
-    $letterSpacing:0px,
-    $lineHeight:0rem,
+@mixin font-roboto-midium(
+    $fontsize:1.2rem,
+    $letterSpacing:0.9px,
+    $lineHeight:2.7rem,
     ){
-    font-family: a ;
-    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
     letter-spacing: $letterSpacing;
     line-height: $lineHeight;
     font-size: $fontsize;
 }
 
-@mixin font-(
-    $fontsize:0rem,
-    $letterSpacing:0px,
-    $lineHeight:0rem,
+@mixin font-notojp-midium(
+    $fontsize:1.6rem,
+    $letterSpacing: 3.3px,
+    $lineHeight: 5rem,
     ){
-    font-family: a ;
-    font-weight: 100;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
     letter-spacing: $letterSpacing;
     line-height: $lineHeight;
     font-size: $fontsize;
 }
-@mixin font-(
-    $fontsize:0rem,
-    $letterSpacing:0px,
-    $lineHeight:0rem,
+@mixin font-notojp-bold(
+    $fontsize:1.6rem,
+    $letterSpacing: 3.3px,
+    $lineHeight: 5rem,
     ){
-    font-family: a ;
-    font-weight: 100;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
     letter-spacing: $letterSpacing;
     line-height: $lineHeight;
     font-size: $fontsize;
 }
 
-@mixin font-(
-    $fontsize:0rem,
-    $letterSpacing:0px,
-    $lineHeight:0rem,
+@mixin font-notojp-black(
+    $fontsize:3rem,
+    $letterSpacing:3.6px,
+    $lineHeight: 4.5rem,
     ){
-    font-family: a ;
-    font-weight: 100;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 900;
     letter-spacing: $letterSpacing;
     line-height: $lineHeight;
     font-size: $fontsize;

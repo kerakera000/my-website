@@ -1,23 +1,54 @@
-.base-background-color{
-    background-color: #fff;
+.base-color{
+    background-color: #fffff9;
+}
+.text-color{
+    color: #513743;
+}
+.object-color-white{
+    background-color: #513743;
+    color: #fffff9;
 }
 
-.sub-background-color{
-    background-color: #fff;
+//////カラーパレット
+.base-color-white{
+    background-color: #fffff9;
 }
+.base-color-black{
+    background-color: #16160e;
+}
+.base-color-violet{
+    background-color: #513743;
+}
+.base-color-orange{
+    background-color: #d66a35;
+}
+// .object-color-white{
+//     background-color: #513743;
+//     color: #fffff9;
+// }
+// .object-color-black{
+//     background-color: #d66a35;
+//     color: #16160e;
+// }
+// .object-color-violet{
+//     background-color: #fffff9;
+//     color: #513743;
+// }
+// .object-color-orange{
+//     background-color: #16160e;
+//     color: #d66a35;
+// }
+// .text-color-white{
+//     color: #fffff9;
+// }
+// .text-color-black{
+//     color: #16160e;
+// }
+// .text-color-violet{
+//     color: #513743;
+// }
+// .text-color-orange{
+//     color: #d66a35;
+// }
 
-.copyright-background-color{
-    background-color: #fff;
-}
 
-.button-background-color{
-    background-color: #fff;
-}
-
-.title-color{
-    color: #fff;
-}
-
-.sub-title-color{
-    color: #fff;
-}

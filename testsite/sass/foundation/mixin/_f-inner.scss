@@ -1,0 +1,8 @@
+@mixin inner(
+    $padding-left: 5rem,
+    $padding-right:5rem,
+    )
+    {
+    padding-left: $padding-left;
+    padding-right: $padding-right;
+}

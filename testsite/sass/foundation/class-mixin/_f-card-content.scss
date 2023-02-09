@@ -1,0 +1,152 @@
+@mixin card-content($border-radius:1.5rem,){
+    .card-content{
+        width: auto;
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &__front{
+            width: 35rem;
+            height: 100%;
+            position: relative;
+            z-index: 2;
+            transform: rotate3d(0, 1, 0, 0deg);
+            border-radius: 1.5rem;
+            transition: all 0.4s;
+            padding: 3rem;
+            display: flex;
+            gap: 2rem;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            &--title{
+                font-family: 'Noto Sans JP', sans-serif;
+                font-weight: 700;
+                font-size: 2.8rem;
+            }
+            &--label{
+                position: absolute;
+                height: 3.5rem;
+                width: 3.5rem;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                top: 10px;
+                right: 10px;
+                transform: rotate(45deg);
+                &--text{
+                    font-size: 1rem;
+                    letter-spacing: 1.2px;
+                    width: 90%;
+                    height: auto;
+                    background-color: rgba(255, 255, 255, 0);
+                }
+            }
+            &--bideo-content{
+                width: 100%;
+                height: 30rem;
+                border-radius: $border-radius;
+                padding: 2rem 1.5rem 1rem;
+                position: relative;
+                .typing-animation {
+                    width: 100%;
+                    height: 100%;
+                    text-align: left;
+                    overflow: scroll;
+                    -ms-overflow-style: none;
+                    scrollbar-width: none;
+                    &::-webkit-scrollbar{
+                        display: none;
+                    }
+                }
+                .bem-typing {
+                    white-space: nowrap;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                }
+                .scss-typing {
+                    white-space: nowrap;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                }
+                &--img-wp{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-52%, -50%);
+                    height: 115%;
+                    width: 115%;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                &--img-docker{
+                    position: absolute;
+                    top: 50%;
+                    left: 53%;
+                    transform: translate(-50%,-50%);
+                    height: 90%;
+                    width: 90%;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+                &--img-github{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-52%, -50%);
+                    height: 100%;
+                    width: 100%;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+        }
+
+        &__behind{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 1;
+            transform: translate(-50%,-50%) rotate3d(0, 1, 0, 180deg);
+            border-radius: 1.5rem;
+            width: 35rem;
+            height: 100%;
+            transition: all 0.4s;
+            padding: 3rem;
+            display: flex;
+            gap: 2rem;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            &--title{
+                font-family: 'Noto Sans JP', sans-serif;
+                font-weight: 700;
+                font-size: 2.8rem;
+            }
+            &--bideo-content{
+                width: 100%;
+                height: 30rem;
+                border-radius: 1.5rem;
+                padding: 2rem 1.5rem 1rem;
+                &--text{
+                    font-family: 'Noto Sans JP', sans-serif;
+                    font-weight: 500;
+                    font-size: 1.6rem;
+                    text-align: left;
+                    letter-spacing: 1.2px;
+                    line-height: 2.8rem;
+                }
+            }
+        }
+        .rotate-front-card{
+            transform: rotate3d(0, 1, 0, 180deg);
+            z-index: 1;
+        }
+        .rotate-behind-card{
+            transform: translate(-50%,-50%) rotate3d(0, 1, 0, 0deg);
+            z-index: 2;
+        }
+    }
+}

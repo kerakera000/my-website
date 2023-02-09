@@ -1,0 +1,16 @@
+@use '../../../foundation/class-mixin/f-title-content' as title;
+@use '../../../foundation/mixin/f-flex' as flex;
+@use '../../../foundation/mixin/f-inner' as inner;
+@use '../../../foundation/base/f-font-family' as font;
+@use '../../../foundation/class-mixin/f-card-content' as card;
+@use '../../../foundation/class-mixin/f-swiper' as swiper;
+
+.works{
+    margin-top: 8rem;
+    padding-bottom: 8rem;
+    flex-direction: column;
+    @include flex.flex($gap:10rem);
+    @include title.title-content($margin-bottom:0);
+    @include inner.inner($padding-left:8rem,$padding-right:8rem);
+    @include swiper.swiper();
+}
