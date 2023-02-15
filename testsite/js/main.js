@@ -14,18 +14,42 @@ document.addEventListener("DOMContentLoaded", function(){
     let SolidColor = document.getElementsByClassName("solid-color");    //キューブ用外枠
     let TextShadow = document.getElementsByClassName("text-shadow");    //文字影
     let SolidBack = document.getElementsByClassName('solid-back'); //solidの反転色
+
+    //スライダー監視クラス
+    let SwiperPaginationBullet = document.getElementsByClassName("swiper-pagination-bullet");
+    let SwiperButtonPrev = document.getElementsByClassName("swiper-button-prev");
+    let SwiperButtonNext = document.getElementsByClassName("swiper-button-next");
+
+    //画像反転用監視クラス
     let ImgWp = document.getElementById("img-wp");
     let ImgDocker = document.getElementById("img-docker");
     let ImgGithub = document.getElementById("img-github");
 
-
+    //ボタンスイッチ用の監視クラス
     const BtnSwichWhite = document.querySelector("#btn-swich-white");
     const BtnSwichBlack = document.querySelector("#btn-swich-black");
     const BtnSwichViolet = document.querySelector("#btn-swich-violet");
     const BtnSwichOrange = document.querySelector("#btn-swich-orange");
 
-    // 背景白 テキスト紫 影指定
+    // 白 
     btnWhite.addEventListener("click", function() {
+
+        for (let SwiperBTNPrev = 0; SwiperBTNPrev < SwiperButtonPrev.length; SwiperBTNPrev++) {
+            // 要素にクラス「base-color-OO」があるかどうかを確認します
+            SwiperButtonPrev[SwiperBTNPrev].classList.add("swiper-button-prev-white");
+            SwiperButtonPrev[SwiperBTNPrev].classList.remove("swiper-button-prev-black");
+            SwiperButtonPrev[SwiperBTNPrev].classList.remove("swiper-button-prev-violet");
+            SwiperButtonPrev[SwiperBTNPrev].classList.remove("swiper-button-prev-orange");
+        }
+
+        for (let SwiperBTNNext = 0; SwiperBTNNext < SwiperButtonNext.length; SwiperBTNNext++) {
+            // 要素にクラス「base-color-OO」があるかどうかを確認します
+            SwiperButtonNext[SwiperBTNNext].classList.add("swiper-button-next-white");
+            SwiperButtonNext[SwiperBTNNext].classList.remove("swiper-button-next-black");
+            SwiperButtonNext[SwiperBTNNext].classList.remove("swiper-button-next-violet");
+            SwiperButtonNext[SwiperBTNNext].classList.remove("swiper-button-next-orange");
+        }
+
         if (btnWhite.classList.contains("swich-action")){       //もしロック用クラスがついていたら
             return                                             //何もしない
         } else{                                                //条件と違う場合
@@ -120,10 +144,32 @@ document.addEventListener("DOMContentLoaded", function(){
             ObjectColor[ObjectColorWhite].style.color = "#fffff9";
             ObjectColor[ObjectColorWhite].style.backgroundColor = "#513743";
         }
+
+        //スライダーの点部分
+        for(SPBwhite=0;SPBwhite<SwiperPaginationBullet.length;SPBwhite++){
+            SwiperPaginationBullet[SPBwhite].style.backgroundColor = "#513743";
+        }
     });
 
-    // 背景黒 テキストオレンジ 影指定
+    // 黒 
     btnBlack.addEventListener("click", function() {
+
+        for (let SwiperBTNPrev = 0; SwiperBTNPrev < SwiperButtonPrev.length; SwiperBTNPrev++) {
+            // 要素にクラス「base-color-OO」があるかどうかを確認します
+            SwiperButtonPrev[SwiperBTNPrev].classList.add("swiper-button-prev-black");
+            SwiperButtonPrev[SwiperBTNPrev].classList.remove("swiper-button-prev-white");
+            SwiperButtonPrev[SwiperBTNPrev].classList.remove("swiper-button-prev-violet");
+            SwiperButtonPrev[SwiperBTNPrev].classList.remove("swiper-button-prev-orange");
+        }
+
+        for (let SwiperBTNNext = 0; SwiperBTNNext < SwiperButtonNext.length; SwiperBTNNext++) {
+            // 要素にクラス「base-color-OO」があるかどうかを確認します
+            SwiperButtonNext[SwiperBTNNext].classList.add("swiper-button-next-black");
+            SwiperButtonNext[SwiperBTNNext].classList.remove("swiper-button-next-white");
+            SwiperButtonNext[SwiperBTNNext].classList.remove("swiper-button-next-violet");
+            SwiperButtonNext[SwiperBTNNext].classList.remove("swiper-button-next-orange");
+        }
+
         if (btnBlack.classList.contains("swich-action")){       //もしロック用クラスがついていたら
             return                                             //何もしない
         } else{                                                //条件と違う場合
@@ -218,10 +264,32 @@ document.addEventListener("DOMContentLoaded", function(){
             ObjectColor[ObjectColorBlack].style.color = "#16160e";
             ObjectColor[ObjectColorBlack].style.backgroundColor = "#d66a35";
         }
+
+        //スライダーの点部分
+        for(SPBlack=0;SPBlack<SwiperPaginationBullet.length;SPBlack++){
+            SwiperPaginationBullet[SPBlack].style.backgroundColor = "#d66a35";
+        }
     });
 
-    // 背景紫 テキスト白 影指定
+    // 紫 
     btnViolet.addEventListener("click", function() {
+
+        for (let SwiperBTNPrev = 0; SwiperBTNPrev < SwiperButtonPrev.length; SwiperBTNPrev++) {
+            // 要素にクラス「base-color-OO」があるかどうかを確認します
+            SwiperButtonPrev[SwiperBTNPrev].classList.add("swiper-button-prev-violet");
+            SwiperButtonPrev[SwiperBTNPrev].classList.remove("swiper-button-prev-white");
+            SwiperButtonPrev[SwiperBTNPrev].classList.remove("swiper-button-prev-black");
+            SwiperButtonPrev[SwiperBTNPrev].classList.remove("swiper-button-prev-orange");
+        }
+
+        for (let SwiperBTNNext = 0; SwiperBTNNext < SwiperButtonNext.length; SwiperBTNNext++) {
+            // 要素にクラス「base-color-OO」があるかどうかを確認します
+            SwiperButtonNext[SwiperBTNNext].classList.add("swiper-button-next-violet");
+            SwiperButtonNext[SwiperBTNNext].classList.remove("swiper-button-next-white");
+            SwiperButtonNext[SwiperBTNNext].classList.remove("swiper-button-next-black");
+            SwiperButtonNext[SwiperBTNNext].classList.remove("swiper-button-next-orange");
+        }
+
         if (btnViolet.classList.contains("swich-action")){       //もしロック用クラスがついていたら
             return                                             //何もしない
         } else{                                                //条件と違う場合
@@ -315,9 +383,30 @@ document.addEventListener("DOMContentLoaded", function(){
             ObjectColor[ObjectColorViolet].style.color = "#513743";
             ObjectColor[ObjectColorViolet].style.backgroundColor = "#fffff9";
         }
+
+        //スライダーの点部分
+        for(SPBViolet=0;SPBViolet<SwiperPaginationBullet.length;SPBViolet++){
+            SwiperPaginationBullet[SPBViolet].style.backgroundColor = "#fffff9";
+        }
     });
-    // 背景オレンジ テキスト黒 影指定
+    // オレンジ 
     btnOrange.addEventListener("click", function() {
+
+        for (let SwiperBTNPrev = 0; SwiperBTNPrev < SwiperButtonPrev.length; SwiperBTNPrev++) {
+            // 要素にクラス「base-color-OO」があるかどうかを確認します
+            SwiperButtonPrev[SwiperBTNPrev].classList.add("swiper-button-prev-orange");
+            SwiperButtonPrev[SwiperBTNPrev].classList.remove("swiper-button-prev-white");
+            SwiperButtonPrev[SwiperBTNPrev].classList.remove("swiper-button-prev-black");
+            SwiperButtonPrev[SwiperBTNPrev].classList.remove("swiper-button-prev-violet");
+        }
+
+        for (let SwiperBTNNext = 0; SwiperBTNNext < SwiperButtonNext.length; SwiperBTNNext++) {
+            // 要素にクラス「base-color-OO」があるかどうかを確認します
+            SwiperButtonNext[SwiperBTNNext].classList.add("swiper-button-next-orange");
+            SwiperButtonNext[SwiperBTNNext].classList.remove("swiper-button-next-white");
+            SwiperButtonNext[SwiperBTNNext].classList.remove("swiper-button-next-black");
+            SwiperButtonNext[SwiperBTNNext].classList.remove("swiper-button-next-violet");
+        }
         
         if (btnOrange.classList.contains("swich-action")){       //もしロック用クラスがついていたら
             return                                             //何もしない
@@ -410,6 +499,11 @@ document.addEventListener("DOMContentLoaded", function(){
         for(ObjectColorViolet=0;ObjectColorViolet<ObjectColor.length;ObjectColorViolet++){
             ObjectColor[ObjectColorViolet].style.color = "#d66a35";
             ObjectColor[ObjectColorViolet].style.backgroundColor = "#16160e";
+        }
+
+        //スライダーの点部分
+        for(SPBOrange=0;SPBOrange<SwiperPaginationBullet.length;SPBOrange++){
+            SwiperPaginationBullet[SPBOrange].style.backgroundColor = "#16160e";
         }
     });
 });

@@ -2,22 +2,28 @@
 @use '../../../foundation/mixin/f-flex' as flex;
 @use '../../../foundation/mixin/f-inner' as inner;
 @use '../../../foundation/base/f-font-family' as font;
-@use '../../../foundation/class-mixin/f-card-content' as card;
-@use '../../../foundation/class-mixin/f-swiper' as swiper;
+@use '../../../foundation/class-mixin/f-blog-flex' as blogflex;
 
-.works{
-    margin-top: 8rem;
+.blog{
     padding-bottom: 8rem;
-    padding-top: 8rem;
     flex-direction: column;
     @include flex.flex($gap:6rem);
     @include title.title-content($margin-bottom:0);
     @include inner.inner($padding-left:8rem,$padding-right:8rem);
-    &__slide-box{
+    &__content{
         width: 100%;
-        height: 50rem;
-        padding: 3rem;
+        height: auto;
+        padding: 5rem 5rem 0 5rem;
         border-radius: 1.5rem;
-        @include swiper.swiper();
+        &--box-one{
+            width: 100%;
+            height: auto;
+            @include blogflex.blog-flex();
+        }
+        &--box-two{
+            width: 100%;
+            height: auto;
+            @include blogflex.blog-flex($orderimg:1,$ordertext:2);
+        }
     }
 }

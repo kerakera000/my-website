@@ -1,0 +1,87 @@
+@mixin contact(){
+/* Contact Form7 */
+
+.contact7 {
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-top: 3rem;
+    h3{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 2.1rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        padding-left: 0.2rem;
+        span{
+            font-size: 10px;
+            margin-left: 2rem;
+            color: rgb(202, 56, 56);
+        }
+    }
+    div{
+        border: solid 3px gainsboro;
+        padding: 0.5rem;
+        margin-bottom: 2.2rem;
+        p{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 1.8rem;
+            .wpcf7-form-control-wrap{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding-left: 0.2rem;
+                input{
+                    width: 50%;
+                    outline: none;
+                }
+                span{
+                    width: 50%;
+                }
+            }
+        }
+        textarea{
+            width: 100%;
+            outline: none;
+        }
+    }
+}
+.wpcf7 form.invalid .wpcf7-response-output{
+    text-align: center;
+    color: rgb(202, 56, 56);
+    border: transparent 1px solid;
+}
+/* 任意マーク */
+.contact7 .optional {
+	color: rgb(68, 128, 168);
+	border-radius: 3px;
+	font-size: 10px;
+	margin-left: 10px;
+	padding: 5px 10px;
+	letter-spacing: 2px;
+}
+.btn_contact7 {
+	text-align: center;
+    margin: 0 13rem;
+    height: 4rem;
+    border-radius: 1rem;
+    position: relative;
+    transition: 0.3s;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    &:hover {
+        margin: 0 12.8rem;
+        height: 4.3rem;
+    }
+    input{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+}

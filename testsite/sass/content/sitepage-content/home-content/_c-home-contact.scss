@@ -1,0 +1,48 @@
+@use '../../../foundation/class-mixin/f-title-content' as title;
+@use '../../../foundation/mixin/f-flex' as flex;
+@use '../../../foundation/mixin/f-inner' as inner;
+@use '../../../foundation/base/f-font-family' as font;
+@use '../../../foundation/class-mixin/f-contact' as contact;
+
+.contact{
+    padding-bottom: 8rem;
+    margin-top: 8rem;
+    padding-top: 8rem;
+    flex-direction: column;
+    @include flex.flex($gap:6rem);
+    @include title.title-content($margin-bottom:0);
+    @include inner.inner($padding-left:8rem,$padding-right:8rem);
+    &__box{
+        width: 100%;
+        height: 80rem;
+        padding: 5rem;
+        border-radius: 1.5rem;
+        @include flex.flex($gap:5rem);
+        &--form{
+            width: 50%;
+            height: 100%;
+            border-radius: 1.5rem;
+            padding: 2rem 3rem;
+            @include contact.contact();
+        }
+        &--about-content{
+            width: 50%;
+            height: 100%;
+            flex-direction: column;
+            @include flex.flex($gap:3rem);
+            &--about{
+                border-radius: 1.5rem;
+                width: 100%;
+                height: 50%;
+            }
+            &--card{
+                width: 100%;
+                height: 50%;
+                &--image{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

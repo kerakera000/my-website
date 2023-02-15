@@ -1,0 +1,12 @@
+@use '../../foundation/base/f-font-family' as font;
+@use '../../foundation/mixin/f-flex' as flex;
+
+.footer{
+    text-align: center;
+    height: 6rem;
+    margin-top: 10rem;
+    @include flex.flex();
+    &__text{
+        @include font.font-roboto-bold($fontsize:2rem,$lineHeight:normal);
+    }
+}

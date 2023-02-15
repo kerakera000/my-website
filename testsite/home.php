@@ -41,7 +41,7 @@
 </section>
 
 <section class="skill-set base-color boxshadow-up boxshadow-white-up">
-    <h2 class="title-box boxshadow-down boxshadow-white-down">
+    <h2 id="title-box1" class="title-box boxshadow-down boxshadow-white-down">
         <span class="title-box__sub-title text-color">skill set</span>
         <span class="title-box__title text-color">スキルセット</span>
     </h2>
@@ -178,21 +178,90 @@
     </div>
 </section>
 
-<section class="works base-color boxshadow-up boxshadow-white-up">
-    <h2 class="title-box boxshadow-down boxshadow-white-down">
-        <span class="title-box__sub-title text-color">works</span>
-        <span class="title-box__title text-color">制作物</span>
+<div class="base-color boxshadow-up boxshadow-white-up">
+    <section class="works">
+        <h2 id="title-box2" class="title-box boxshadow-down boxshadow-white-down">
+            <span class="title-box__sub-title text-color">works</span>
+            <span class="title-box__title text-color">制作物</span>
+        </h2>
+        
+        <div class="works__slide-box boxshadow-up boxshadow-white-up">
+            <!-- Sliderを包むコンテナ要素 -->
+            <div class="swiper">
+            <!-- スライド要素を包む要素 -->
+                <div class="swiper-wrapper">
+                    <!-- 各スライド -->
+                    <a class="swiper-slide solid-back solid-color-white-back slide1">
+                        <img class="swiper-slide--img" src="<?php echo get_stylesheet_directory_uri(); ?>/css/images/higurashi.png" alt="何もない">
+                    </a>
+                    <a class="swiper-slide solid-back solid-color-white-back slide2">
+                        <img class="swiper-slide--img" src="<?php echo get_stylesheet_directory_uri(); ?>/css/images/l-webdesine.png" alt="何もない">
+                    </a>
+                    <a class="swiper-slide solid-back solid-color-white-back slide3">
+                        <img class="swiper-slide--img" src="<?php echo get_stylesheet_directory_uri(); ?>/css/images/gimwebsite.png" alt="何もない">
+                    </a>
+                </div>
+                <div class="swiper-button-prev swiper-button-prev-white"></div>
+                <div class="swiper-button-next swiper-button-next-white"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="blog">
+        <h2 id="title-box3" class="title-box boxshadow-down boxshadow-white-down">
+            <span class="title-box__sub-title text-color">blog</span>
+            <span class="title-box__title text-color">ブログ</span>
+        </h2>
+
+        <div class="blog__content solid-back solid-color-white-back">
+            <div class="blog__content--box-one">
+                <div class="blog-flex-content">
+                    <div class="blog-flex-content__text-box boxshadow-up boxshadow-white-up">
+                        <p class="blog-flex-content__text-box--text text-color">
+                            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                        </p>
+                    </div>
+                    <div class="blog-flex-content__img-box boxshadow-down boxshadow-white-down">
+                        <img class="blog-flex-content__img-box--image" src="<?php echo get_stylesheet_directory_uri(); ?>/css/images/higurashi.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="blog__content--box-two">
+                <div class="blog-flex-content">
+                    <div class="blog-flex-content__text-box boxshadow-up boxshadow-white-up">
+                        <p class="blog-flex-content__text-box--text text-color">
+                            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                        </p>
+                    </div>
+                    <div class="blog-flex-content__img-box boxshadow-down boxshadow-white-down">
+                        <img class="blog-flex-content__img-box--image" src="<?php echo get_stylesheet_directory_uri(); ?>/css/images/higurashi.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<section class="contact base-color boxshadow-up boxshadow-white-up">
+    <h2 id="title-box4" class="title-box boxshadow-down boxshadow-white-down">
+        <span class="title-box__sub-title text-color">contact</span>
+        <span class="title-box__title text-color">お問い合わせ</span>
     </h2>
-    
-    <div class="slider">
-        <div class="slides">
-            <div class="slide slide1">Slide 1</div>
-            <div class="slide slide2">Slide 2</div>
-            <div class="slide slide3">Slide 3</div>
+    <div class="contact__box solid-back solid-color-white-back">
+        <div class="contact__box--form boxshadow-up boxshadow-white-up">
+            <?php echo do_shortcode('[contact-form-7 id="6" title="コンタクトフォーム 1"]'); ?>
+        </div>
+        <div class="contact__box--about-content">
+            <div class="contact__box--about-content--about boxshadow-down boxshadow-white-down">
+
+            </div>
+            <div class="contact__box--about-content--card boxshadow-up boxshadow-white-up">
+                <img class="contact__box--about-content--card--image" src="<?php echo get_stylesheet_directory_uri(); ?>/css/images/higurashi.png" alt="">
+            </div>
         </div>
     </div>
-    <button id="prevBtn">Prev</button>
-    <button id="nextBtn">Next</button>
-
 </section>
+
 <?php get_footer(); ?>

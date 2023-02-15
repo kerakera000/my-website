@@ -1,11 +1,11 @@
 //boxshadow-up を参照して動かす
 .boxshadow-white-up{
-    box-shadow:  5px 5px 10px #999995,
+    box-shadow:  5px 5px 10px #bfbfbb,
                 -5px -5px 10px #ffffff;
 }
 .boxshadow-black-up{
-    box-shadow:  5px 5px 10px #12120b,
-                -5px -5px 10px #1a1a11;
+    box-shadow:  10px 10px 20px #0d0d08,
+                -10px -10px 20px #1f1f14;
 }
 .boxshadow-violet-up{
     box-shadow:  5px 5px 10px #412c36,
@@ -18,12 +18,12 @@
 
 //boxshadow-down を参照して動かす
 .boxshadow-white-down{
-    box-shadow: inset 5px 5px 10px #999995,
+    box-shadow: inset 5px 5px 10px #bfbfbb,
                 inset -5px -5px 10px #ffffff !important;
 }
 .boxshadow-black-down{
-    box-shadow: inset 5px 5px 10px #12120b,
-                inset -5px -5px 10px #1a1a11 !important;
+    box-shadow: inset 10px 10px 20px #12120b,
+                inset -10px -10px 20px #1a1a11 !important;
 }
 .boxshadow-violet-down{
     box-shadow: inset 5px 5px 10px #412c36,

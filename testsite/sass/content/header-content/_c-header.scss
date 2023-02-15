@@ -26,3 +26,68 @@
         }
     }
 }
+@media screen and (max-width: 768px) {
+    .header{
+        top: 50%;
+        height: 100vh;
+        transform: translate(70%, -50%);
+        transition: 0.3s;
+        &__nav{
+            height: inherit;
+            padding: 0%;
+            transition: 0.3s;
+            &--list-box{
+                border-radius: 0;
+                flex-direction: column;
+            }
+        }
+    }
+    .header.active{
+        transition: 0.3s;
+        transform: translate(-50%, -50%);
+    }
+    .header__nav.active{
+        transition: 0.3s;
+    }
+    .header__nav-btn{
+        width: 4rem;
+        height: 4rem;
+        position: absolute;
+        right: 2rem;
+        top: 2rem;
+        padding: 0.3rem;
+        flex-direction: column;
+        z-index: 1000;
+        @include flex.flex($gap:1rem);
+        span{
+            height: 2px;
+            width: 100%;
+            display: block;
+            transition: 0.3s;
+            &:nth-child(1){
+                transform-origin:right top;
+                transform: rotate(0deg);
+            }
+            &:nth-child(3){
+                transform-origin:right top;
+                transform: rotate(0deg);
+            }
+        }
+    }
+    .header__nav-btn.active{
+        span{
+            transition: 0.3s;
+            &:nth-child(1){
+                transform-origin:right top;
+                transform: rotate(-45deg) translateX(-5px) translateY(-4px);
+            }
+            &:nth-child(2){
+                width: 0;
+            }
+            &:nth-child(3){
+                transform-origin:right top;
+                transform: rotate(45deg) translateX(-3px) translateY(4px);
+            }
+        }
+    }
+}
