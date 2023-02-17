@@ -130,13 +130,14 @@
                 height: 30rem;
                 border-radius: 1.5rem;
                 padding: 2rem 1.5rem 1rem;
+                overflow: scroll;
                 &--text{
                     font-family: 'Noto Sans JP', sans-serif;
                     font-weight: 500;
                     font-size: 1.6rem;
                     text-align: left;
                     letter-spacing: 1.2px;
-                    line-height: 2.8rem;
+                    line-height: 2.5rem;
                 }
             }
         }
@@ -147,6 +148,33 @@
         .rotate-behind-card{
             transform: translate(-50%,-50%) rotate3d(0, 1, 0, 0deg);
             z-index: 2;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .card-content{
+            &__front{
+                gap: 4rem;
+                width: 28rem;
+                &--title{
+                    font-size: 2rem;
+                }
+                &--bideo-content{
+                    height: 22rem;
+                }
+            }
+    
+            &__behind{
+                width: 28rem;
+                &--title{
+                    font-size: 2rem;
+                }
+                &--bideo-content{
+                    &--text{
+                        font-size: 1.4rem;
+                    }
+                }
+            }
         }
     }
 }

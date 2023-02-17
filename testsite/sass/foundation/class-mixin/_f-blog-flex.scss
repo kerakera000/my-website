@@ -30,4 +30,22 @@
             }
         }
     }
+    @media screen and (max-width: 768px) {
+        .blog-flex-content{
+            flex-direction: column;
+            height: auto;
+            gap: 3rem;
+            justify-content: flex-start;
+            &__text-box{
+                width: 100%;
+                height: 30rem;
+            }
+            &__img-box{
+                width: 100%;
+                height: 30%;
+                box-shadow: none;
+                padding: 0;
+            }
+        }
+    }
 }

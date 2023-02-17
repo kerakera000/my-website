@@ -251,3 +251,76 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .top{
+        &__content{
+            padding-right: 0;
+            height: 70rem;
+            border-radius: 0 0 23rem 0;
+            justify-content: space-around;
+            &--title{
+                font-size: 5rem;
+                &--span{
+                    padding-left: 4rem;
+                }
+            }
+            &--palette{
+                &--color-palette{
+                    flex-wrap: wrap;
+                    width: 34rem;
+                    margin-top: 2rem;
+                    justify-content: flex-start;
+                    gap: 2rem;
+                    &--text-box{
+                        width: 13rem;
+                        height: 4rem;
+                        &--item{
+                            width: 2.5rem;
+                            height: 2.5rem;
+                        }
+                    }
+                }
+            }
+        }
+        &__cube-content{
+            top: 25rem;
+            right: 30%;
+            transform: translate(0%, 0%);
+            .cube{
+                &__box{
+                    margin: 3.5rem;
+                    width: 10rem;
+                    height: 10rem;
+                    &--block{
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 2rem;
+                        &:nth-child(1) {
+                            transform: translateZ(5rem);
+                        }
+                        &:nth-child(2) {
+                            transform: rotateY(180deg) translateZ(5rem);
+                        }
+                        &:nth-child(3) {
+                            transform: rotateY(90deg) translateZ(5rem);
+                        }
+                        &:nth-child(4) {
+                            transform: rotateY(-90deg) translateZ(5rem);
+                        }
+                        &:nth-child(5) {
+                            transform: rotateX(90deg) translateZ(5rem);
+                        }
+                        &:nth-child(6) {
+                            transform: rotateX(-90deg) translateZ(5rem);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

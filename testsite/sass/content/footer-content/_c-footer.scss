@@ -10,3 +10,11 @@
         @include font.font-roboto-bold($fontsize:2rem,$lineHeight:normal);
     }
 }
+@media screen and (max-width: 768px) {
+    .footer{
+        margin-top: 6rem;
+        &__text{
+            font-size: 1.4rem;
+        }
+    }
+}

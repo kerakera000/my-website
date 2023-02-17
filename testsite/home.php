@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <section class="top">
     <div class="top__content base-color boxshadow-up boxshadow-white-up">
-        <h1 class="top__content--title text-color text-shadow text-shadow-white">Welcome to<br><span class="top__content--title--span">my Portfolio</span></h1>
+        <h1 class="top__content--title text-color">Welcome to<br><span class="top__content--title--span">my Portfolio</span></h1>
         <div class="top__content--palette">
             <div class="top__content--palette--title-palette">
                 <p class="top__content--palette--title-palette--text text-color">change theme color</p>
@@ -26,7 +26,7 @@
             </div>
         </div>
     </div>
-    <div class="top__cube-content base-color boxshadow-down boxshadow-white-down">
+    <div class="top__cube-content base-color">
         <div class="cube">
             <div class="cube__box">
                 <div class="cube__box--block solid-color solid-color-white">1</div>
@@ -41,7 +41,7 @@
 </section>
 
 <section class="skill-set base-color boxshadow-up boxshadow-white-up">
-    <h2 id="title-box1" class="title-box boxshadow-down boxshadow-white-down">
+    <h2 class="title-box boxshadow-down boxshadow-white-down">
         <span class="title-box__sub-title text-color">skill set</span>
         <span class="title-box__title text-color">スキルセット</span>
     </h2>
@@ -100,6 +100,12 @@
                 </span>
                 <div class="card-content__behind--bideo-content boxshadow-down boxshadow-white-down">
                     <!-- ビデオ挿入 -->
+                    <p class="card-content__behind--bideo-content--text text-color">
+                        scssはflocssの管理方法を参考にして作成しています。
+                        適切な、管理をする事でサイトデザインの更新を素早く行うことが出来、
+                        また、scssの強みである@useやincludeを使ったcssコンポーネントなども
+                        効率よく取り入れて読みやすいように制作することが可能です。
+                    </p>
                 </div>
             </div>
         </div>
@@ -124,9 +130,11 @@
             <div id="Click-btn-docker-card-behind" class="card-content__behind base-color boxshadow-up boxshadow-white-up">
                 <h4 class="card-content__behind--title text-color">dockerを使ったローカル開発</h4>
                 <div class="card-content__behind--bideo-content boxshadow-down boxshadow-white-down">
-                    <div>
-                        <!-- ビデオ挿入 -->
-                    </div>
+                    <p class="card-content__behind--bideo-content--text text-color">
+                        dockerを使用してローカルでWPテンプレートの開発を行っております。
+                        マニュアルどうりに使うだけで誰でもローカル環境でWP開発を行えるように
+                        テンプレートを作成し、日々更新をしているので、ぜひ使ってみてください！
+                    </p>
                 </div>
             </div>
         </div>
@@ -148,7 +156,11 @@
                 <h4 class="card-content__behind--title text-color">Githubでのコード管理</h4>
                 <div class="card-content__behind--bideo-content boxshadow-down boxshadow-white-down">
                     <!-- ビデオ挿入 -->
-
+                    <p class="card-content__behind--bideo-content--text text-color">
+                        githubでは今まで作成してきたアプリやサイト、サイト制作を高速で
+                        構築出来るようにするためのテンプレートなど主にサイト制作に関する
+                        内容を管理しています。
+                    </p>
                 </div>
             </div>
         </div>
@@ -170,7 +182,9 @@
                 <h4 class="card-content__behind--title text-color">WPで作れる機能</h4>
                 <div class="card-content__behind--bideo-content boxshadow-down boxshadow-white-down">
                     <!-- ビデオ挿入 -->
-
+                    <p class="card-content__behind--bideo-content--text text-color">
+                        Wordpressテーマ開発では、カスタム投稿作成や固定ページの自動修復機能。プラグインを使用してオリジナルテーマに組み込んだりいろんな機能を構築することが可能です。
+                    </p>
                 </div>
             </div>
         </div>
@@ -180,7 +194,7 @@
 
 <div class="base-color boxshadow-up boxshadow-white-up">
     <section class="works">
-        <h2 id="title-box2" class="title-box boxshadow-down boxshadow-white-down">
+        <h2 class="title-box boxshadow-down boxshadow-white-down">
             <span class="title-box__sub-title text-color">works</span>
             <span class="title-box__title text-color">制作物</span>
         </h2>
@@ -210,7 +224,7 @@
     </section>
 
     <section class="blog">
-        <h2 id="title-box3" class="title-box boxshadow-down boxshadow-white-down">
+        <h2 class="title-box boxshadow-down boxshadow-white-down">
             <span class="title-box__sub-title text-color">blog</span>
             <span class="title-box__title text-color">ブログ</span>
         </h2>
@@ -245,7 +259,7 @@
 </div>
 
 <section class="contact base-color boxshadow-up boxshadow-white-up">
-    <h2 id="title-box4" class="title-box boxshadow-down boxshadow-white-down">
+    <h2 class="title-box boxshadow-down boxshadow-white-down">
         <span class="title-box__sub-title text-color">contact</span>
         <span class="title-box__title text-color">お問い合わせ</span>
     </h2>

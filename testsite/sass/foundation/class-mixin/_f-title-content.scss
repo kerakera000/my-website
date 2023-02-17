@@ -10,8 +10,6 @@
         margin-bottom: $margin-bottom;
         width: 30rem;
         height: 11rem;
-        transition: opacity 0.8s;
-        opacity: 0;//後で０にしないとjs機能しない
         &__sub-title{
             font-size: 1.7rem;
             font-family: 'Roboto', sans-serif;
@@ -20,12 +18,19 @@
         &__title{
             font-size: 3.3rem;
             font-family: 'Noto Sans JP', sans-serif;
-            font-weight: 900;
+            font-weight: 700;
             margin-top: 1rem;
             letter-spacing: 0.3rem;
         }
     }
-    .title-box.active{
-        opacity: 1;
+    @media screen and (max-width: 768px) {
+        .title-box{
+            width: 23rem;
+            height: 8rem;
+            &__title{
+                font-size: 2.7rem;
+                margin-top: 0;
+            }
+        }
     }
 }

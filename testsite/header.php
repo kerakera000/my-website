@@ -37,7 +37,7 @@
 				<span class="object-color object-color-white"></span>
 		</div>
 
-		<div class="gotop base-color base-color-white boxshadow-up boxshadow-white-up">
+		<div class="gotop">
 			<div class="cube">
 				<div class="cube__box">
 					<div class="cube__box--block solid-color solid-color-white">1</div>

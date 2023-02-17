@@ -7,11 +7,11 @@
             true // HTMLの最後で読み込むかどうか
         );
 
-        wp_enqueue_script(
-            'scrolejs', //名前（なんでも良い）
-            get_theme_file_uri( '/js/scrole.js'),  //読み込むファイル
-            true // HTMLの最後で読み込むかどうか
-        );
+        // wp_enqueue_script(
+        //     'scrolejs', //名前（なんでも良い）
+        //     get_theme_file_uri( '/js/scrole.js'),  //読み込むファイル
+        //     true // HTMLの最後で読み込むかどうか
+        // );
         wp_enqueue_script(
             'bemcontentjs', //名前（なんでも良い）
             get_theme_file_uri( '/js/bemcontent.js'),  //読み込むファイル

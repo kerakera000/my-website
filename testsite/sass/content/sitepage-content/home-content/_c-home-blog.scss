@@ -27,3 +27,19 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .blog{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        gap: 3rem;
+        padding-bottom: 0%;
+        &__content{
+            border: none;
+            padding: 2rem 2rem 0 2rem;
+            &--box-one{
+                @include blogflex.blog-flex($orderimg:1,$ordertext:2);
+            }
+        }
+    }
+}

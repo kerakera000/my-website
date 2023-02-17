@@ -40,6 +40,7 @@
         border-radius: 1.5rem;
         position: relative;
         @include flex.flex($gap:8rem);
+        @include card.card-content($border-radius:50%);
         &--title{
             width: 40rem;
             height: 5rem;
@@ -50,6 +51,38 @@
             transform: translate(-50% ,-50%);
             @include font.font-notojp-bold($fontsize:3rem);
         }
-        @include card.card-content($border-radius:50%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .skill-set{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        margin-top: 8rem;
+        padding-top: 6rem;
+        padding-bottom: 0rem;
+        gap: 6rem;
+        &__content{
+            height: auto;
+            padding: 15rem 0rem 3rem;
+            gap: 6rem;
+            flex-direction: column;
+            &--title{
+                top: 7%;
+                width: 24rem;
+                font-size: 2rem;
+            }
+        }
+        &__WPcontent{
+            height: auto;
+            padding: 15rem 5rem 6rem;
+            flex-direction: column;
+            @include flex.flex($gap:5rem);
+            &--title{
+                width: 24rem;
+                top: 4%;
+                font-size: 2rem;
+            }
+        }
     }
 }
